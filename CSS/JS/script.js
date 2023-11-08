@@ -1,13 +1,12 @@
 function init(){
-    var button = document.getElementById('entrybutton');
+  //add your javascrip between these two lines of code
+  var button = document.getElementById('entrybutton');
   
-    function showMeText(){
-      var textbox = document.getElementById('entryinput');
-      document.getElementById('textoutput').innerHTML = textbox.value;
-      alert("Kat Prush: " + textbox.value);
-    }
-  
-    button.addEventListener('click', showMeText);
-    }
-    
+  function showMeText(){
+    var entryinput = document.getElementById('entryinput');
+    document.getElementById('textoutput').innerHTML = entryinput.value;
+    alert("Kat: " + entryinput.value);
+  }
+  button.addEventListener('click', showMeText);
+  }
   window.addEventListener('load', init);
